@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    width: 100%;
+    overflow-x: hidden; /* Evita el desbordamiento lateral */
+  }
+
+  #mision-vision-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f8ff;
+    background: url('../assets/images/onditas.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f0f8ff;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Espacio interior del contenedor interno */
+    border: 4px solid #ffffff; /* Color del marco */
+    border-style:groove;
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 1200px; /* Ancho máximo del contenedor interno */
+}
+  
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+    align-items: center;
+}
+  
+  .image-container-mv {
+    flex: 1;
+    max-width: 40%;
+    min-width: 300px; /* Asegura que la imagen no sea demasiado pequeña en pantallas grandes */
+  }
+  
+  .section-image {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px;
+  }
+  
+  .content-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px; /* Añadido margen derecho */
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .subsection {
+    margin-bottom: 20px;
+  }
+  
+  .subsection h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  
+  .subsection h3 .icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .subsection p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  
+  hr {
+    border: none;
+    border-top: 3px solid #000;
+    margin-top: 10px;
+  }
+  
+  /* Media queries para dispositivos móviles */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-container-mv {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .content-container {
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 20px;
+    }
+  
+    .subsection h3 {
+      font-size: 18px;
+    }
+  
+    .subsection p {
+      font-size: 14px;
+    }
+  
+    .subsection h3 .icon {
+      width: 20px;
+      height: 20px;
+    }
+  }

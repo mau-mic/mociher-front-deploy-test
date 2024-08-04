@@ -1,0 +1,40 @@
+/* src/components/Servicios.css */
+#services-section {
+  padding: 100px;
+  background-color: #162635;
+  text-align: center;
+}
+#services-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: white;
+  align-items: center;
+  /* width: 100%; */
+}
+
+#services-section p {
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  justify-content: center;
+  align-items: center;
+  width: 96%; /* Ajusta el ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+
+@media (min-width: 1400px) {
+  #services-section p {
+    font-size: 1.2em; /* Ajusta el tamaño de fuente según sea necesario */
+  }
+}
+@media (min-width: 480px) {
+  #services-section p {
+    font-size: 1.2em; /* Ajusta el tamaño de fuente según sea necesario */
+  }
+}

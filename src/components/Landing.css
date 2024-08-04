@@ -1,0 +1,205 @@
+/* src/components/Landing.css */
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+#landing-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  padding: 8vw;
+  flex-direction: column;
+  transition: background-image 1s ease-in-out;
+  /* background-color: #024d41; */
+}
+
+.content-landing {
+    background-color: rgba(217, 217, 217, 0.6);
+    padding: 2vw 5vw;
+    border-radius: 2vw;
+    text-align: center;
+    width: 50%;  
+    padding-top: 1vw;
+    
+}
+
+.content-landing h1 {
+  font-size: 4vw;
+  margin-bottom: 1vw;
+  line-height: 1.1;
+  white-space: normal;
+  text-align: center;
+  color: #144F49;
+}
+
+.content-landing p {
+  text-align: center;
+  font-size: 1.4vw;
+  margin-bottom: 2vw;
+  color: #1E1E1E;
+  font-weight: bold;
+}
+
+.cta-button {
+  background-color: #184B47;
+  color: white;
+  padding: 1.5vw 4vw;
+  border: none;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  font-size: 1.5vw;
+  transition: background-color 0.3s, color 0.3s;
+}
+.cta-button:hover {
+    background-color: #184B47; /* Cambiar el color de fondo en hover */
+    color: #242422; /* Cambiar el color del texto en hover */
+}
+@media (max-width: 2300px) {
+    .landing-section {
+        flex-direction: row;
+        padding: 6vw;
+    }
+  
+    .content-landing {
+        padding: 4vw;
+        width: 60%;
+    }
+  
+    .content-landing h1 {
+        font-size: 4.4vw;
+    }
+  
+    .content-landing p {
+        font-size: 2vw;
+    }
+  
+    .cta-button {
+        padding: 1.5vw 3vw;
+        font-size: 2vw;
+    }
+  }
+/* Extra Large Devices (Desktops) */
+@media (max-width: 1280px) {
+  .landing-section {
+      flex-direction: row;
+      padding: 7vw;
+  }
+
+  .content-landing {
+      margin-right: 4vw;
+      padding: 5vw;
+      width: 80%;
+  }
+
+  .content-landing h1 {
+      font-size: 6.1vw;
+  }
+
+  .content-landing p {
+      font-size: 3vw;
+  }
+
+  .cta-button {
+      padding: 1.5vw 3vw;
+      font-size: 3vw;
+  }
+}
+
+/* Large Devices (Laptops) */
+@media (max-width: 1024px) {
+  .landing-section {
+      flex-direction: row;
+      padding: 6.5vw;
+  }
+
+  .content-landing {
+      margin-right: 3vw;
+      padding: 4vw;
+      width: 80%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .content-landing h1 {
+      font-size: 6.1vw;
+  }
+
+  .content-landing p {
+      font-size: 3.5vw;
+  }
+
+  .cta-button {
+      padding: 1.5vw 3vw;
+      font-size: 3.5vw;
+  }
+
+
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 860px) {
+  .landing-section {
+      flex-direction: row;
+      padding: 11vw;
+  }
+
+  .content-landing {
+      padding: 2vw;
+      max-width: 100%;
+      width: 80%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;    
+  }
+
+  .content-landing h1 {
+      font-size: 6.7vw;
+  }
+
+  .content-landing p {
+      font-size: 3vw;
+  }
+
+  .cta-button {
+      padding: 1vw 6vw;
+      font-size: 2.5vw;
+  }
+}
+
+  
+
+/* Small Devices (Smartphones) */
+@media (max-width: 480px) {
+  .landing-section {
+      flex-direction: row; 
+      padding: 9vw;
+  }
+
+  .content-landing {
+      margin-right: 0;
+      padding: 6vw;
+      max-width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+  }
+
+  .content-landing h1 {
+      font-size: 5.8vw;
+  }
+
+  .content-landing p {
+      font-size: 3vw;
+  }
+
+  .cta-button {
+      padding: 1vw 6vw;
+      font-size: 2vw;
+  }
+}

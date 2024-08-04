@@ -1,0 +1,82 @@
+@media (max-width: 768px) {
+  .modal-card {
+    min-width: 300px;
+  }
+}
+
+p {
+  font-size: medium;
+  font-weight: 370;
+  margin-top: 10px;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: -1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0; /* Initially transparent */
+  transition: opacity 0.3s ease; /* Opacity transition */
+}
+
+.modal-card {
+  display: block;
+  z-index: -1000;
+  margin: 15% auto;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  width: 60%;
+  max-width: 480px;
+  border-radius: 8px;
+  position: relative;
+  justify-content: center;
+  opacity: 0; /* Initially transparent */
+  transform: translateY(-100%); /* Start off-screen above */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Opacity and transform transitions */
+}
+
+.modal.active {
+  z-index: 10000;
+  opacity: 1; /* Fully opaque */
+}
+
+.modal.active .modal-card {
+  z-index: 10000;
+  opacity: 1; /* Fully opaque */
+  transform: translateY(0); /* Move modal card down into view */
+}
+
+
+.modal-content {
+  padding: 40px;
+  padding-top: 30px;
+}
+
+.modal-status-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.close {
+  margin-left: auto;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}

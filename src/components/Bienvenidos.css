@@ -1,0 +1,74 @@
+#bienvenidos-section {
+    position: relative;
+    background-color: rgba(0, 128, 0, 0.7); /* Green tint with 70% opacity */
+    background-image: url("../assets/images/bienvenidos-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+    opacity: 2;
+  }
+  
+  
+#bienvenidos-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(21, 87, 77, 0.8); /* Adjusted color and opacity */
+  z-index: 1;
+}
+
+.bienvenidos-section-content {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+  .left-content {
+    color: white;
+  }
+  .left-content h2 {
+    font-size: 42px;
+  }
+  .left-content p {
+    margin-top: 15px;
+    font-size: x-large;
+    
+  }
+  
+  .bienvenidos-section-content h2,
+  .bienvenidos-section-content p {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    #bienvenidos-section {
+      flex-direction: column; /* Stack vertically on smaller screens */
+      padding-left: 50px;
+      padding-right: 50px;
+      text-align: center; /* Align text to the left */
+    }
+
+    .left-content h2 {
+      font-size: 22px;
+    }
+
+    .left-content p {
+      margin-top: 15px;
+      font-size: medium;
+      color: white;
+      text-align: center;
+      align-items: center;
+    }
+  }
+  
